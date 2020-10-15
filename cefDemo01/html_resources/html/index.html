@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button type="button" onclick="test()">点击这里1</button>
+    <button type="button" onclick="openCmd()">点击这里2</button>
+    <button type="button" onclick="openDevTools()">点击这里3</button>
+
+</body>
+</html>
+<script type="text/javascript">
+    function test() {
+        alert("123");        
+        //注意在js函数里面只认小写开头
+        cefCust.openMsg();
+    }
+    function openCmd() {
+        cefCust.opencmd()
+    }
+    function openDevTools() {
+        cefCust.showDevTools();
+    }
+</script>
